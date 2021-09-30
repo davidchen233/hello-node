@@ -47,7 +47,7 @@ readData(0);
 console.log("after");
 ```
 
---> 顯示 1~100 after 101~500 / after 會顯示再 100 後
+--> 顯示 1-100 after 101-500 / after 會顯示再 100 後
 
 - 程式先跑 第一次 for 迴圈，印出 1~100
 - 因為 idx < 500，遇到 setTimeout()外包工作給 webapis，便繼續往下執行
