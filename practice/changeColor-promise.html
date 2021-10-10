@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <style>
+      body {
+        transition: 0.4s;
+      }
+    </style>
+  </head>
+  <body id="body">
+    <script>
+      let bg = document.getElementById("body");
+
+      let colors = [
+        "#DB995A",
+        "#A06E48",
+        "#654236",
+        "#9E8B6B",
+        "#D6D4A0",
+        "#DC915E",
+        "#E24E1B",
+      ];
+      let index = 0;
+
+      bg.style.backgroundColor = colors[index];
+
+      let changeColor = () => {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            index++;
+            resolve(`${index % colors.length}`);
+          }, 1000);
+        });
+      };
+
+      changeColor()
+        .then((data) => {
+          console.log(data);
+          bg.style.backgroundColor = colors[data];
+          return changeColor();
+        })
+        .then((data) => {
+          console.log(data);
+          bg.style.backgroundColor = colors[data];
+          return changeColor();
+        })
+        .then((data) => {
+          console.log(data);
+          bg.style.backgroundColor = colors[data];
+          return changeColor();
+        })
+        .then((data) => {
+          console.log(data);
+          bg.style.backgroundColor = colors[data];
+          return changeColor();
+        })
+        .then((data) => {
+          console.log(data);
+          bg.style.backgroundColor = colors[data];
+          return changeColor();
+        })
+        .then((data) => {
+          console.log(data);
+          bg.style.backgroundColor = colors[data];
+          return changeColor();
+        });
+
+      // 回到 indexp[0]
+      // .then((data) => {
+      //   console.log(data);
+      //   bg.style.backgroundColor = colors[data];
+      //   return changeColor();
+      // });
+    </script>
+  </body>
+</html>
