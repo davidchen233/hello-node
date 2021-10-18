@@ -12,13 +12,11 @@ function readFilePromise() {
   });
 }
 
-async function readFile() {
+(async function readFile() {
   try {
     const file = await readFilePromise();
     console.log("data", file);
   } catch (err) {
     console.error("err", err);
   }
-}
-
-readFile();
+})();
