@@ -1,7 +1,8 @@
 const axios = require("axios");
+const moment = require("moment");
 
 let stockCode = "006208";
-let today = "20211017";
+let today = moment().format("YYYYMMDD");
 let format = "json";
 
 function getData() {

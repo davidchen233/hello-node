@@ -12,7 +12,7 @@ function readFilePromise() {
   });
 }
 
-readFilePromise()
+readFilePromise() // promise
   .then((data) => {
     console.log("正確讀到", data);
   })
