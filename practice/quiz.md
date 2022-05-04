@@ -1,4 +1,4 @@
-# event loop 作業
+# event loop
 
 ## 程式 1
 
